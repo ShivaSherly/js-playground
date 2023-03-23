@@ -1,8 +1,7 @@
 const chalk = require('chalk');
+const errorMessage=require('./utils/errorMessage');
 
 
-console.log(chalk.blue.bgWhite('Hello world!'));
-console.log(chalk.green("my success messsage"))
-console.log(chalk.red("my getting error"))
-console.log(chalk.grey("my intial warning!"))
-console.log(chalk.cyan("my brief info"))
+errorMessage.displayError("Unable to place swggy order please try after sometime..!");
+errorMessage.displayWarning("Please enter valid email address");
+errorMessage.displayInfo("Your order placed successfully");
