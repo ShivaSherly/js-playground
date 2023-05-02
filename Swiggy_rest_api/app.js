@@ -26,7 +26,6 @@ app.use(express.json());
 app.use('/orders', require('./routes/orderRouter'));
 app.use('/staff', require('./routes/staffRouter'));
 app.use('/user', require('./routes/userRouter'));
-app.use('/login', require('./routes/loginRouter'));
 
 
 app.listen(port, () => {
