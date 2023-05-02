@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example Form</title>
+	<style>
+		form {
+			max-width: 500px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #f2f2f2;
+			border-radius: 10px;
+		}
+
+		label {
+			display: block;
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+
+		input[type=text], input[type=date], input[type=number] {
+			display: block;
+			margin-bottom: 10px;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			background-color: #fff;
+			box-shadow: 0px 0px 5px #ddd;
+			width: 100%;
+		}
+
+		button[type=submit] {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			width: 100%;
+			margin-top: 10px;
+		}
+
+		button[type=submit]:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="dob">Date of Birth:</label>
+		<input type="date" id="dob" name="dob" required>
+
+		<label for="city">City:</label>
+		<input type="text" id="city" name="city" required>
+
+		<label for="drivingLicence">Driving Licence:</label>
+		<input type="text" id="drivingLicence" name="drivingLicence" required>
+
+		<label for="experience">Experience:</label>
+		<input type="number" id="experience" name="experience" required>
+
+		<label for="staffId">Staff ID:</label>
+		<input type="text" id="staffId" name="staffId" required>
+
+		<button type="submit" onclick="myFunction()">Submit</button>
+	</form>
+
+	<script>
+		function myFunction() {
+			// Get form values
+			const name = document.getElementById("name").value;
+			const dob = document.getElementById("dob").value;
+			const city = document.getElementById("city").value;
+			const drivingLicence = document.getElementById("drivingLicence").value;
+			const experience = document.getElementById("experience").value;
+			const staffId = document.getElementById("staffId").value;
+
+			// Do something with form values
+			alert(`Name: ${name}\nDOB: ${dob}\nCity: ${city}\nDriving Licence: ${drivingLicence}\nExperience: ${experience}\nStaff ID: ${staffId}`);
+		}
+	</script>
+</body>
+</html>
