@@ -20,4 +20,4 @@ const mathematicalOperation = (myinputlist,operationType)=>{
 }
 
 console.log(mathematicalOperation([5,6,64,434,645,3434,6453,343,6343,43453,43436,3534,34],"add"));
-console.log(mathematicalOperation([5,6,5,34,534,434,53,434,35,43],"muls"));
+console.log(mathematicalOperation([5,6,5,34,534,434,53,434,35,43],"mul"));
